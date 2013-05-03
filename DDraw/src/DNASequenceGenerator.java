@@ -1,0 +1,23 @@
+
+
+
+import java.util.Random;
+
+public class DNASequenceGenerator {
+
+    String randomDNASeq;
+    String dnaAlphabet = "ACGT";
+
+    public DNASequenceGenerator(int seqLength) {
+        this.randomDNASeq = "";
+        Random randomSeq = new Random();
+
+        for (int i = 0; i < seqLength; i++) {
+            this.randomDNASeq += this.dnaAlphabet.charAt(randomSeq.nextInt(this.dnaAlphabet.length()));
+        }
+    }
+
+    public String getRandomDNASeq() {
+        return randomDNASeq;
+    }
+}

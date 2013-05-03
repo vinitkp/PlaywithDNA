@@ -1,0 +1,36 @@
+
+public class FullTile {
+
+    public String domainFour;
+    public String domainThree;
+    public String domainTwo;
+    public String domainOne;
+
+    public FullTile(String domainFour, String domainThree, String domainTwo, String domainOne) {
+        this.domainFour = domainFour;
+        this.domainThree = domainThree;
+        this.domainTwo = domainTwo;
+        this.domainOne = domainOne;
+    }
+
+    public String getDomainFour() {
+        return domainFour;
+    }
+
+    public String getDomainThree() {
+        return domainThree;
+    }
+
+    public String getDomainTwo() {
+        return domainTwo;
+    }
+
+    public String getDomainOne() {
+        return domainOne;
+    }
+
+    @Override
+    public String toString() {
+        return this.domainFour + this.domainThree + this.domainTwo + this.domainOne;
+    }
+}
